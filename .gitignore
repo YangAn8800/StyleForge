@@ -1,0 +1,31 @@
+# 依赖与构建产物
+node_modules/
+.next/
+out/
+__pycache__/
+
+# 环境变量（含 API 密钥，绝不提交）
+.env
+.env.local
+.env*.local
+
+# 生成结果与用户数据
+web/public/generated/
+web/data/tag_state.json.bak
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.log
+*.tmp
+
+# 脚本生成的产物（clone 后跑 web/scripts_build_styles.py 重建）
+web/public/styles/
+
+# 爬虫过程状态（非资产）
+xhs_done*.json
+xhs_done*.json.bak
+xhs_noseries*.json
+StyleForge-brief.zip
